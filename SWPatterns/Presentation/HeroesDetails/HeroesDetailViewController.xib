@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroesDetailViewController" customModule="SWPatterns" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="FOs-Hj-eVq" id="ae9-w0-xa8"/>
+                <outlet property="heroImageView" destination="Qsa-7U-QWD" id="qiu-O4-msf"/>
+                <outlet property="nameHero" destination="N9h-LB-2dN" id="d5h-hA-zqB"/>
+                <outlet property="transformationsButton" destination="Ieu-ZG-dDd" id="yz1-Ae-Yz6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eJP-BJ-gsn">
+                    <rect key="frame" x="16" y="75" width="361" height="727"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qsa-7U-QWD" customClass="AsyncImageView" customModule="SWPatterns" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="225"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="225" id="bKX-rZ-DFb"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9h-LB-2dN">
+                            <rect key="frame" x="0.0" y="240.99999999999997" width="361" height="35.666666666666657"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOs-Hj-eVq">
+                            <rect key="frame" x="0.0" y="292.66666666666669" width="361" height="384.00000000000006"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieu-ZG-dDd">
+                            <rect key="frame" x="0.0" y="692.66666666666663" width="361" height="34.333333333333371"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="TRANSFORMACIONES"/>
+                            <connections>
+                                <action selector="onDidTapButtonTransformations:" destination="-1" eventType="touchUpInside" id="euc-ds-vEU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eJP-BJ-gsn" secondAttribute="trailing" constant="16" id="Kfa-m7-chd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eJP-BJ-gsn" secondAttribute="bottom" constant="16" id="ZQB-mB-MqC"/>
+                <constraint firstItem="eJP-BJ-gsn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="c8Z-yH-OrK"/>
+                <constraint firstItem="eJP-BJ-gsn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="luq-H7-wWg"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
