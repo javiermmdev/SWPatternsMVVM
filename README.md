@@ -1,81 +1,95 @@
 
-# SWPatterns Application 🚀
+# SWPatterns: A Dragon Ball Heroes App 🌌
 
-SWPatterns is a mobile application designed to display heroes and their transformations from the Dragon Ball universe. It employs the **MVVM (Model-View-ViewModel)** architecture to separate concerns, enhance testability, and facilitate a clean and maintainable code structure.
+## Overview
 
-## Project Structure 📁
+SWPatterns is a mobile application that allows users to explore the fascinating world of Dragon Ball heroes and their transformations. This app follows the **MVVM (Model-View-ViewModel)** architecture, which helps separate the business logic from the user interface, making the code more modular, testable, and maintainable. 
 
-Below is the directory structure of the project:
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/javiermmdev/SWPatternsMVVM.git
+    cd SWPatternsMVVM
+    ```
+2. Open the project in Xcode:
+    ```bash
+    open SWPatternsMVVM.xcodeproj
+    ```
+3. Build and run the app in a simulator or a physical device.
+
+## Usage
+
+1. Open the project in Xcode.
+2. Build and run the application on your device or simulator.
+3. Enjoy exploring the Dragon Ball heroes and their transformations! 🎉
+
+## Features
+
+- **Login System**: Secure login using Basic Authentication 🔐
+- **Hero List**: View a list of heroes with detailed information 🦸‍♂️
+- **Transformation Details**: Explore various transformations available for each hero 🔥
+- **Responsive UI**: Smooth transitions and user-friendly design 📱
+
+
+## Project Structure
+
+Here's a brief overview of the project structure:
 
 ```
-SWPatterns/
-├── Models/
+SWPatterns
+├── Models
+│   ├── Credentials.swift
 │   ├── Hero.swift
 │   ├── Transformation.swift
-│   └── Credentials.swift
-├── ViewModels/
-│   ├── HeroesListViewModel.swift
-│   ├── HeroesDetailViewModel.swift
-│   ├── LoginViewModel.swift
-│   └── TransformationDetailViewModel.swift
-├── Views/
-│   ├── HeroesListViewController.swift
-│   ├── HeroesDetailViewController.swift
-│   ├── LoginViewController.swift
-│   └── TransformationDetailViewController.swift
-├── UseCases/
-│   ├── GetAllHeroesUseCase.swift
-│   ├── GetSingleHeroesUseCase.swift
-│   ├── GetAllTransformationsUseCase.swift
-│   └── GetSingleTransformationUseCase.swift
-├── Networking/
+│   └── HeroIDContainer.swift
+├── Networking
 │   ├── APIRequest.swift
 │   ├── APISession.swift
 │   ├── APIErrorResponse.swift
-│   └── APIInterceptor.swift
-└── Resources/
-    ├── Assets.xcassets
-    └── Info.plist
+│   ├── APIInterceptor.swift
+│   └── APIRequestInterceptor.swift
+├── UseCases
+│   ├── GetAllHeroesUseCase.swift
+│   ├── GetSingleHeroesUseCase.swift
+│   ├── GetAllTransformationsUseCase.swift
+│   ├── GetSingleTransformationUseCase.swift
+│   └── LoginUseCase.swift
+├── ViewModels
+│   ├── HeroesListViewModel.swift
+│   ├── HeroesDetailViewModel.swift
+│   ├── LoginViewModel.swift
+│   ├── SplashViewModel.swift
+│   └── TransformationListViewModel.swift
+│   └── TransformationDetailViewModel.swift
+├── Views
+│   ├── HeroesListViewController.swift
+│   ├── HeroesDetailViewController.swift
+│   ├── LoginViewController.swift
+│   ├── SplashViewController.swift
+│   ├── TransformationListViewController.swift
+│   └── TransformationDetailViewController.swift
+├── Resources
+│   ├── Assets.xcassets
+│   ├── LaunchScreen.storyboard
+│   └── Main.storyboard
+└── Supporting Files
+    ├── AppDelegate.swift
+    └── SceneDelegate.swift
 ```
 
-## Features 🌟
+## Contributions
 
-- **Hero List**: View all heroes available in the database with their respective details.
-- **Hero Details**: Get detailed information about each hero, including their transformations.
-- **Login Functionality**: Users can log in to access personalized features.
-- **Transformation Details**: View specific transformations for each hero, showcasing their abilities.
+Contributions are welcome! If you would like to contribute, please fork the repository and create a pull request.
 
-## Technology Stack 🛠️
+## License
 
-- **Swift**: The programming language used for development.
-- **UIKit**: For building the user interface.
-- **MVVM Architecture**: This structure promotes a clear separation of concerns:
-    - **Model**: Represents the data structures (e.g., Hero, Transformation).
-    - **View**: The user interface components (ViewControllers).
-    - **ViewModel**: Contains the logic for managing the data and communication between the Model and the View.
+This project is licensed under the MIT License.
 
-## How to Run the Project 🏃‍♂️
+## Contact
 
-1. Clone the repository to your local machine.
-2. Open the `SWPatterns.xcodeproj` file in Xcode.
-3. Build and run the application on your desired simulator or device.
-
-## Testing 🧪
-
-The project includes unit tests for critical functionalities, ensuring that the application behaves as expected. Use the following command to run the tests:
-
-```
-⌘ U
-```
-
-## Contribution 🤝
-
-If you'd like to contribute to this project, feel free to submit a pull request or create an issue.
-
-## License 📝
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
+For questions or suggestions, feel free to reach out!
 
 ---
-
-Feel free to explore the application, and enjoy the world of heroes and transformations! 🎉
