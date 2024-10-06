@@ -5,6 +5,16 @@
 
 SWPatterns is a mobile application that allows users to explore the fascinating world of Dragon Ball heroes and their transformations. This app follows the **MVVM (Model-View-ViewModel)** architecture, which helps separate the business logic from the user interface, making the code more modular, testable, and maintainable. 
 
+
+![SplashScreen and Login](https://i.imgur.com/OKZUXEv.png)
+*SplashScreen and Login*
+
+![Heroes and Detail Heroes](https://i.imgur.com/UxfXKvU.png)
+*Heroes and Detail Heroes*
+
+![Transformations and Detail Transformations](https://i.imgur.com/XHF3GcM.png)
+*Transformations and Detail Transformations*
+
 ## Installation
 
 To set up the project locally, follow these steps:
